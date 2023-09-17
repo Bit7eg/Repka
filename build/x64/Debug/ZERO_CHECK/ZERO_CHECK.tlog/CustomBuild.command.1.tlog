@@ -1,0 +1,10 @@
+^D:\PROJECTS\C++PROJECTS\REPKA\BUILD\CMAKEFILES\E60DF53278FDE7D1F154E10546CB6708\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/Projects/C++Projects/repka -BD:/Projects/C++Projects/repka/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file D:/Projects/C++Projects/repka/build/Repka.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
